@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.modul1.android.rifyandaruwibisono_1202150088_modul1.MainActivity">
+
+    <TextView
+        android:id="@+id/Makan1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="56dp"
+        android:text="@string/Makan1"
+        android:textSize="36sp"
+        />
+    <TextView
+        android:id="@+id/tempat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Makan1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:textSize="20sp"/>
+    <EditText
+        android:id="@+id/menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tempat"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="52dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="@string/menu"
+        />
+
+    <EditText
+        android:id="@+id/jumlah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/menu"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:hint="@string/jumlah"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/pilihan1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/jumlah"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/jumlah"
+        android:layout_marginBottom="69dp"
+        android:onClick="eatbus"
+        android:text="@string/pilihan1" />
+
+    <Button
+        android:id="@+id/pilihan2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/pilihan1"
+        android:layout_alignBottom="@+id/pilihan1"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_toEndOf="@+id/tempat"
+        android:layout_toRightOf="@+id/tempat"
+        android:onClick="abnormal"
+        android:text="@string/pilihan2" />
+
+</RelativeLayout>

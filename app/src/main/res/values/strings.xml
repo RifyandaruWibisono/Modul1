@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">rifyandaruwibisono_1202150088_modul1</string>
+    <string name="Makan1">Menu Makanan</string>
+    <string name="menu">Pilih Makanan</string>
+    <string name="jumlah">Pilih Porsi</string>
+    <string name="pilihan1">eatbus</string>
+    <string name="pilihan2">Abnormal</string>
+    <string name="Makan2">Menu Makanan</string>
+    <string name="menumakanan">Menu</string>
+    <string name="porsi">Porsi</string>
+    <string name="harga">Harga</string>
+</resources>
