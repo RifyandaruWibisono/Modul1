@@ -25,7 +25,7 @@
         android:layout_marginTop="12dp"
         android:textSize="20sp"/>
     <EditText
-        android:id="@+id/menu"
+        android:id="@+id/menumakanann"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/tempat"
@@ -37,10 +37,10 @@
         />
 
     <EditText
-        android:id="@+id/jumlah"
+        android:id="@+id/jumlahporsi"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/menu"
+        android:layout_below="@+id/menumakanann"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="28dp"
         android:ems="10"
@@ -51,9 +51,9 @@
         android:id="@+id/pilihan1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/jumlah"
+        android:layout_alignLeft="@+id/jumlahporsi"
         android:layout_alignParentBottom="true"
-        android:layout_alignStart="@+id/jumlah"
+        android:layout_alignStart="@+id/jumlahporsi"
         android:layout_marginBottom="69dp"
         android:onClick="eatbus"
         android:text="@string/pilihan1" />

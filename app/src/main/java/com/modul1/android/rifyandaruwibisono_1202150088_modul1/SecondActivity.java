@@ -16,8 +16,8 @@ public class SecondActivity extends AppCompatActivity {
         setContentView(R.layout.activity_second);
         Context context = getApplicationContext();
 
-        Toast mahal = Toast.makeText(context, "Makan Mahal", Toast.LENGTH_LONG);
-        Toast murah = Toast.makeText(context,"Makan Murah", Toast.LENGTH_LONG);
+        Toast mahal = Toast.makeText(context, "Makanan Terlalu Mahal", Toast.LENGTH_LONG);
+        Toast murah = Toast.makeText(context,"Makan Murah Meriah", Toast.LENGTH_LONG);
 
         TextView lihatMenu = (TextView) findViewById(R.id.menupilih);
         TextView lihatHarga = (TextView) findViewById(R.id.hargato);
@@ -28,10 +28,10 @@ public class SecondActivity extends AppCompatActivity {
         int total = intent.getIntExtra("totalharga", 0);
         String totall = Integer.toString(total);
 
-        int jumlah = intent.getIntExtra("jumlah", 0);
+        int jumlah = intent.getIntExtra("jumlahporsi", 0);
         String porsi = Integer.toString(jumlah);
 
-        String menuu = intent.getStringExtra("menu");
+        String menuu = intent.getStringExtra("menumakanann");
         int modal = intent.getIntExtra("modal",0);
 
         String tempatt = intent.getStringExtra("tempat");

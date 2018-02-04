@@ -25,8 +25,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        mMenu = (EditText) findViewById(R.id.menu);
-        mJumlah = (EditText) findViewById(R.id.jumlah);
+        mMenu = (EditText) findViewById(R.id.menumakanann);
+        mJumlah = (EditText) findViewById(R.id.jumlahporsi);
         mPilihan1 = (Button) findViewById(R.id.pilihan1);
         mPilihan2 = (Button) findViewById(R.id.pilihan2);
     }
@@ -39,8 +39,8 @@ public class MainActivity extends AppCompatActivity {
 
         totalharga = jumlah *eatbus;
         Intent intent = new Intent(this, SecondActivity.class);
-        intent.putExtra("jumlah",jumlah);
-        intent.putExtra("menu",menu);
+        intent.putExtra("jumlahporsi",jumlah);
+        intent.putExtra("menumakanann",menu);
         intent.putExtra("totalharga", totalharga);
         intent.putExtra("modal", modal);
         intent.putExtra("tempat","Eatbus");
@@ -55,8 +55,8 @@ public class MainActivity extends AppCompatActivity {
 
         totalharga = jumlah *abnormal;
         Intent intent = new Intent(this, SecondActivity.class);
-        intent.putExtra("menu",menu);
-        intent.putExtra("jumlah", jumlah);
+        intent.putExtra("menumakanann",menu);
+        intent.putExtra("jumlahporsi", jumlah);
         intent.putExtra("totalharga",totalharga);
         intent.putExtra("modal", modal);
         intent.putExtra("tempat", "Abnormal");
